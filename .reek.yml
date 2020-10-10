@@ -1,0 +1,71 @@
+detectors:
+  DuplicateMethodCall:
+    max_calls: 3
+
+  FeatureEnvy:
+    enabled: false
+
+  InstanceVariableAssumption:
+    enabled: false
+
+  IrresponsibleModule:
+    enabled: false
+
+  ManualDispatch:
+    enabled: false
+
+  NestedIterators:
+    max_allowed_nesting: 3
+
+  NilCheck:
+    enabled: false
+
+  TooManyConstants:
+    max_constants: 7
+
+  TooManyInstanceVariables:
+    max_instance_variables: 6
+
+  TooManyMethods:
+    max_methods: 20
+
+  TooManyStatements:
+    max_statements: 10
+
+  UncommunicativeVariableName:
+    accept:
+      - i
+      - e
+      - k
+      - v
+      - x
+      - y
+      - z
+      - a
+      - b
+      - c
+      - d
+      - t
+      - q
+
+  UncommunicativeModuleName:
+    accept:
+      - V1
+      - V2
+
+  UtilityFunction:
+    enabled: false
+
+directories:
+  "app/controllers":
+    MissingSafeMethod:
+      enabled: false
+  "app/helpers":
+    LongParameterList:
+      max_params: 4
+    TooManyStatements:
+      max_statements: 20
+exclude_paths:
+  - db/migrate
+  - app/lib/active_storage
+  - vendor
