@@ -5,7 +5,7 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: ivan
-  password: <%= ENV['TODO-APPLICATION_DATABASE_PASSWORD'] %>
+  password: <%= ENV['TODO_APPLICATION_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default

@@ -3,7 +3,8 @@ require('turbolinks').start()
 require('@rails/activestorage').start()
 require('channels')
 
-require("./components/TodoApp");
+require('./components/TodoApp');
+require('./components/Footer')
 require('bootstrap')
 import 'bootstrap/dist/css/bootstrap'
 

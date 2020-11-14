@@ -7,7 +7,7 @@ const setAxiosHeaders = () => {
     }
     const csrfTokenContent = csrfToken.content
     csrfTokenContent &&
-    (axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfTokenContent)
+        (axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfTokenContent)
 }
 
 export default setAxiosHeaders

@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import axios from "axios";
-import TodoItems from "./TodoItems";
-import TodoItem from "./TodoItem";
-import TodoForm from "./TodoForm";
-import Spinner from "./Spinner";
-import ErrorMessage from "./ErrorMessage";
+
+import axios from "axios"
+
+import TodoItems from "./TodoItems"
+import TodoItem from "./TodoItem"
+import TodoForm from "./TodoForm"
+import Spinner from "./Spinner"
+import ErrorMessage from "./ErrorMessage"
 
 class TodoApp extends React.Component {
     constructor(props) {
@@ -28,7 +30,6 @@ class TodoApp extends React.Component {
     getTodoItems() {
         axios
             .get("/api/v1/todo_items")
-            .get("/broken-end-point")
             .then(response => {
                 this.clearErrors();
                 this.setState({ isLoading: true });
