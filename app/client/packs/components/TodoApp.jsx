@@ -8,6 +8,7 @@ import TodoItem from "./TodoItem"
 import TodoForm from "./TodoForm"
 import Spinner from "./Spinner"
 import ErrorMessage from "./ErrorMessage"
+import Footer from "./Footer";
 
 class TodoApp extends React.Component {
     constructor(props) {
@@ -94,6 +95,7 @@ class TodoApp extends React.Component {
                     </>
                 )}
                 {this.state.isLoading && <Spinner />}
+                <Footer />
             </>
         );
     }
