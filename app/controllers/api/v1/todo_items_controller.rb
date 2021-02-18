@@ -3,8 +3,8 @@
 module Api
   module V1
     class TodoItemsController < ApplicationController
-      before_action :authenticate_user!,
-                    :set_todo_item, only: %i[show edit update destroy]
+      before_action :authenticate_user!
+      before_action :set_todo_item, only: %i[show edit update destroy]
 
       def index
         @todo_items = current_user.todo_items.all
