@@ -18,7 +18,10 @@ gem 'devise'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'rspec-rails', '~> 4.0.2'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
+  gem 'pry'
 end
 
 group :development do
@@ -29,6 +32,7 @@ group :development do
 end
 
 group :test do
+  gem 'database_cleaner'
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'webdrivers'
